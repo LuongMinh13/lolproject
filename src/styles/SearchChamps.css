@@ -1,0 +1,46 @@
+@font-face {
+  font-family: "beaufortforlol";
+  src: url("../../public/fonts/BeaufortforLOL-Regular.ttf");
+}
+
+.search__champs {
+  width: 300px;
+}
+
+.search__champs > input {
+  width: 300px;
+  height: 30px;
+  border-radius: 0;
+}
+
+
+.search__resultsresultschamp {
+  position: absolute;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 300px;
+  height: 230px;
+  background-color: white;
+  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+  overflow: hidden;
+  overflow-y: auto;
+}
+
+.search__resultsresultschamp > p {
+  width: 100%;
+  text-align: center;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  font-family: "beaufortforlol", cursive;
+  font-size: 20px;
+  cursor: pointer;
+}
+
+.search__resultsresultschamp > p:hover {
+  background-color: lightgrey;
+}
+
+.search__resultsresultschamp::-webkit-scrollbar{
+    display: none;
+}

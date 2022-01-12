@@ -1,0 +1,105 @@
+@font-face {
+  font-family: "beaufortforlol";
+  src: url("../../public/fonts/BeaufortforLOL-Regular.ttf");
+}
+
+@font-face {
+  font-family: "anton-regular";
+  src: url("../../public/fonts/Anton-Regular.ttf");
+}
+
+.champs{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    padding: 1.5rem 0;
+    padding-bottom: 0;
+    margin: 2rem;
+    min-width: 250px;
+    max-width: 250px;
+    height: 420px;
+    text-align: center;
+    box-shadow: 0 5px 25px 1px rgb(0 0 0 / 50%);
+    box-shadow: 0 1.6px 1.6px rgba(0, 0, 0, 0.023),
+      0 3.8px 3.8px rgba(0, 0, 0, 0.034), 0 6.9px 6.9px rgba(0, 0, 0, 0.041),
+      0 11.4px 11.4px rgba(0, 0, 0, 0.049), 0 18.8px 18.8px rgba(0, 0, 0, 0.056),
+      0 32.8px 32.8px rgba(0, 0, 0, 0.067), 0 71px 71px rgba(0, 0, 0, 0.09);
+    transition: all 0.2s ease-in-out;
+}
+
+.champs:hover{
+  transform: scale(1.1);
+}
+
+.champs:hover .champs__name{
+  height: 21%;
+  transition: height 1s;
+}
+
+.image__container{
+  height: 150px;
+  width: 100px;
+}
+
+.champs__name{
+  width: 100%;
+  background: rgba(0, 0, 0, 0.8);
+  height: 11%;
+  padding-top: 10px;
+  overflow: hidden;
+}
+
+h3 {
+  font-family: "beaufortforlol", cursive;
+  margin-bottom: 0.2rem;
+  color: #7e643a;
+  margin-top: 0px;
+  text-transform: uppercase;
+}
+
+.champs__type__container{
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-content: center;
+  align-items: center;
+  grid-gap: 0 15px;
+}
+
+.champs__type > img {
+  width: 30px;
+  height: 30px;
+  margin-top: 10px;
+}
+
+@media screen and (max-width: 767px) {
+  .champs {
+    min-width: 175px;
+    height: 300px;
+    padding-bottom: 0;
+  }
+
+  .image__container {
+    height: 90px;
+    width: 90px;
+  }
+
+  .champs__name h3 {
+    font-size: 1em;
+    padding-top: 0.5em;
+  }
+
+  .champs__name {
+    height: 50px;
+  }
+
+  .champs__type {
+    margin-top: 0px;
+  }
+
+  .champs:hover .champs__name {
+    height: 80px;
+    transition: height 1s;
+  }
+}
