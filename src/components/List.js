@@ -1,15 +1,14 @@
 import React, { useState, useEffect } from "react";
-import { riotapi, imagechampapi } from "../axios/requests.js";
-import Champ from "../components/Champ.js";
+import { riotapi } from "../axios/requests.js";
+// import { imagechampapi } from "../axios/requests.js";
+// import Champ from "../components/Champ.js";
 import "../styles/List.css";
 import axios from "axios";
 import SearchChamp from "./SearchChamp.js";
-import SearchType from "./SearchType.js";
 
 function List() {
-  const [showloading, setshowloading] = useState(true);
+  const [showloading, setshowloading] = useState(false);
   const [champs, setChamps] = useState([]);
-
 
   useEffect(() => {
     const getAllChamp = async () => {
@@ -39,8 +38,8 @@ function List() {
     setChamps(champArr);
     // console.log("Array Champs", champArr);
     setTimeout(() => {
-      setshowloading(false);
-    }, 1000);
+      setshowloading(true);
+    }, 2000);
   };
 
   // console.log(resultsearch);
@@ -48,10 +47,11 @@ function List() {
   return (
     <>
       <div className="list__search">
-        <SearchChamp champs={champs} />
-        <SearchType />
+        {showloading && <SearchChamp champs={champs} />}
+
+        {/* <SearchType /> */}
       </div>
-      {!showloading && (
+      {/* {!showloading && (
         <div className="listchamps">
           <div className="listchamps__container">
             <div className="listchamps__content">
@@ -70,7 +70,7 @@ function List() {
             </div>
           </div>
         </div>
-      )}
+      )} */}
     </>
   );
 }

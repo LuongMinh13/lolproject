@@ -3,6 +3,12 @@
   src: url("../../public/fonts/BeaufortforLOL-Regular.ttf");
 }
 
+.search {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
 .search__champs {
   width: 300px;
 }
@@ -10,9 +16,10 @@
 .search__champs > input {
   width: 300px;
   height: 30px;
-  border-radius: 0;
+  border-style: solid ;
+  border-radius: 10px;
+  border-color: #7e643a;
 }
-
 
 .search__resultsresultschamp {
   position: absolute;
@@ -41,6 +48,56 @@
   background-color: lightgrey;
 }
 
-.search__resultsresultschamp::-webkit-scrollbar{
-    display: none;
+.search__resultsresultschamp::-webkit-scrollbar {
+  display: none;
 }
+
+.search__type {
+  padding-right: 20px;
+}
+
+.searchtype__container {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
+
+.searchtype__button {
+  background-color: transparent;
+  font-family: "beaufortforlol", cursive;
+  color: #614414;
+  font-weight: bold;
+  padding: 10px;
+  border-radius: 15%;
+}
+
+.active {
+  background-color: rgb(145, 144, 144);
+}
+
+.listchamps__content{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.preview__button{
+  width: auto;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+}
+
+.preview__button > button{
+  background-color: #111;
+  font-size: 15px;
+  color: #7e643a;
+  height: 25px;
+  width: 75px;
+  border-radius: 10px;
+  font-family: "beaufortforlol", cursive;
+}
+

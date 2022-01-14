@@ -1,15 +1,9 @@
 import React from "react";
-import { useNavigate } from "react-router-dom";
 import { ChampionsType } from "../axios/champtype.js";
 import "../styles/Champ.css";
 
-function Champ({ name, image, tags, description }) {
-  const navigate = useNavigate();
+function Champ({ name, image, tags }) {
 
-  const routeChange = () => {
-    let path = `champions`;
-    navigate.push(path);
-  };
   return (
     <>
       <div
@@ -27,7 +21,6 @@ function Champ({ name, image, tags, description }) {
               <div key={tag} className="champs__type">
                 <img
                   src={ChampionsType[tag]}
-                  onClick={routeChange}
                   alt=""
                   title={tag}
                 />
