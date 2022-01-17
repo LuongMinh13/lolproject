@@ -19,6 +19,7 @@ function CardChamp() {
 
   return (
     <>
+    <Navbar />
       <div
         className="cardchamp__background"
         style={{

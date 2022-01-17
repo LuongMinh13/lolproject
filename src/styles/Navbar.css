@@ -1,5 +1,5 @@
 .navbar {
-  width: 100vw;
+  width: 100%;
   background-color: #111;
 }
 
@@ -9,6 +9,7 @@
   justify-content: space-between;
   align-items: center;
   color: #f9f9f9;
+  padding: 0px 20px 0px 20px;
 }
 
 img {
