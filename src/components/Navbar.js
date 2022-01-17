@@ -13,7 +13,7 @@ function Navbar() {
           />
         </div>
         <div className="navbar__navigation">
-          <a href="/">CHAMPIONS</a>
+          <a className="navbar__route" href="/">CHAMPIONS</a>
         </div>
         <div className="navbar__login">
           <button className="navbar__button" type="submit">CONNEXION</button>

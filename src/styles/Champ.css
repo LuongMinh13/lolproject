@@ -8,41 +8,58 @@
   src: url("../../public/fonts/Anton-Regular.ttf");
 }
 
-.champs{
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: space-between;
-    padding: 1.5rem 0;
-    padding-bottom: 0;
-    margin: 2rem;
-    min-width: 250px;
-    max-width: 250px;
-    height: 420px;
-    text-align: center;
-    box-shadow: 0 5px 25px 1px rgb(0 0 0 / 50%);
-    box-shadow: 0 1.6px 1.6px rgba(0, 0, 0, 0.023),
-      0 3.8px 3.8px rgba(0, 0, 0, 0.034), 0 6.9px 6.9px rgba(0, 0, 0, 0.041),
-      0 11.4px 11.4px rgba(0, 0, 0, 0.049), 0 18.8px 18.8px rgba(0, 0, 0, 0.056),
-      0 32.8px 32.8px rgba(0, 0, 0, 0.067), 0 71px 71px rgba(0, 0, 0, 0.09);
-    transition: all 0.2s ease-in-out;
+.champs {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  padding: 1.5rem 0;
+  padding-bottom: 0;
+  margin: 2rem;
+  min-width: 250px;
+  max-width: 250px;
+  height: 420px;
+  text-align: center;
+  box-shadow: 0 5px 25px 1px rgb(0 0 0 / 50%);
+  box-shadow: 0 1.6px 1.6px rgba(0, 0, 0, 0.023),
+    0 3.8px 3.8px rgba(0, 0, 0, 0.034), 0 6.9px 6.9px rgba(0, 0, 0, 0.041),
+    0 11.4px 11.4px rgba(0, 0, 0, 0.049), 0 18.8px 18.8px rgba(0, 0, 0, 0.056),
+    0 32.8px 32.8px rgba(0, 0, 0, 0.067), 0 71px 71px rgba(0, 0, 0, 0.09);
+  transition: all 0.2s ease-in-out;
 }
 
-.champs:hover{
+.champs:hover {
   transform: scale(1.1);
 }
 
-.champs:hover .champs__name{
+.champs:hover .champs__name {
   height: 21%;
   transition: height 1s;
 }
 
-.image__container{
+.image__container {
   height: 150px;
   width: 100px;
 }
 
-.champs__name{
+.card__header {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.icon {
+  width: auto;
+  height: 20px;
+  padding-right: 15px;
+}
+
+.icon:hover{
+  color: #eee;
+}
+
+.champs__name {
   width: 100%;
   background: rgba(0, 0, 0, 0.8);
   height: 11%;
@@ -58,7 +75,7 @@ h3 {
   text-transform: uppercase;
 }
 
-.champs__type__container{
+.champs__type__container {
   display: flex;
   flex-direction: row;
   justify-content: center;

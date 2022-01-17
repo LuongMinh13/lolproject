@@ -12,7 +12,8 @@
 
 export const riotapi =
   "http://ddragon.leagueoflegends.com/cdn/12.1.1/data/en_US";
-//   http://ddragon.leagueoflegends.com/cdn/11.14.1/data/en_US
+export const imagesplash =
+  "http://ddragon.leagueoflegends.com/cdn/img/champion/splash";
 export const imagechampapi =
   "https://ddragon.leagueoflegends.com/cdn/img/champion/loading";
 export const imageskillapi =

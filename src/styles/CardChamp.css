@@ -1,11 +1,119 @@
-.cardchamp{
-    position: fixed;
-    background-color: blue;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    width: 1200px;
-    height: 700px;
+@font-face {
+  font-family: "beaufortforlol";
+  src: url("../../public/fonts/BeaufortforLOL-Regular.ttf");
 }
 
-.cardchamp__container{}
+.cardchamp__background {
+  width: auto;
+  height: 100vh;
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: cover;
+}
+
+.cardchamp__gradient {
+  padding-top: 30px;
+  width: auto;
+  height: 100vh;
+  background: rgba(0, 0, 0, 0.8);
+  background-image: linear-gradient(
+    to top,
+    rgba(34, 34, 59, 0.8) 0,
+    rgba(34, 34, 59, 0) 60%,
+    rgba(34, 34, 59, 0.8) 100%
+  );
+}
+
+.cardchamp__container {
+  height: 100vh;
+}
+
+.cardchamp__container {
+  height: 100vh;
+  max-width: 1335px;
+  padding: 0px 3.75px;
+  margin: 0px auto;
+}
+
+.cardchamp__image {
+  width: 100%;
+  height: auto;
+}
+
+.cardchamp__description__container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  top: -15rem;
+}
+.cardchamp__2name {
+  padding: 0;
+  margin: 0;
+}
+
+.cardchamp__1name {
+  font-family: "beaufortforlol", cursive;
+  color: #7e643a;
+  font-style: italic;
+  font-weight: 800;
+  font-size: 100px;
+}
+
+.cardchamp__description {
+  display: flex;
+  width: 90%;
+  height: 200px;
+}
+
+.cardchamp__type,
+.cardchamp__history {
+  width: 50%;
+  padding: 3.5rem;
+  height: 100%;
+}
+
+.cardchamp__type {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  border-right: double 5px #7e643a;
+  border-top: double 5px #7e643a;
+}
+
+.cardchamp__type__description {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.cardchamp__type__description:first-child {
+  margin-right: 50px;
+}
+
+.cardchamp__type__description:last-child {
+  margin-left: 50px;
+}
+
+.cardchamp__type__description > p {
+  color: #eee;
+  font-family: "beaufortforlol", cursive;
+  font-size: 25px;
+}
+
+.cardchamp__history {
+  border-left: double 5px #7e643a;
+  border-top: double 5px #7e643a;
+}
+
+.cardchamp__history > p {
+  color: #eee;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  font-style: italic;
+}

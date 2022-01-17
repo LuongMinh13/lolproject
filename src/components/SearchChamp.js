@@ -1,11 +1,9 @@
 import React, { useEffect, useState } from "react";
 
 import "../styles/SearchChamps.css";
-import { ImInfo } from "react-icons/im";
 import { imagechampapi } from "../axios/requests.js";
 import Champ from "./Champ";
 import TypesChampion from "../champdata/type";
-import CardChamp from "./CardChamp";
 
 function SearchChamp({ champs }) {
   // Input filter
@@ -43,21 +41,6 @@ function SearchChamp({ champs }) {
     setFilterChamp(champs);
   }, [champs]);
 
-  // const onClickHandle = (e) => {
-  //   // const newsearchChamp = champs.filter((champ) => {
-  //   //   return champ.name.toLowerCase().includes(searchChamp.toLowerCase());
-  //   // });
-  //   // setClickChamp(newsearchChamp);
-  //   setToogleDropdown(!toogleDropdown);
-  //   console.log(e);
-  // };
-
-  // CARD CHAMP
-  const [tooglecardchamp, setToogleCardChamp] = useState(false);
-  const handletooglecardchamp = (e) => {
-    setToogleCardChamp(true);
-    console.log(e.target.data);
-  };
 
   return (
     <>
@@ -111,13 +94,11 @@ function SearchChamp({ champs }) {
             {filterChamp.map((champ) => (
               <li key={champ.id}>
                 <Champ
+                  champ={champ}
                   name={champ.name}
                   image={`${imagechampapi}/${champ.id}_0.jpg`}
                   tags={champ.tags}
                 />
-                <div className="preview__button">
-                  <button data-array={champ} onClick={}>PREVIEW</button>
-                </div>
               </li>
             ))}
           </ul>
