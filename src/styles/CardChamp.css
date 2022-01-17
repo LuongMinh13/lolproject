@@ -11,6 +11,45 @@
   background-size: cover;
 }
 
+.buttonback__container {
+  position: absolute;
+  right: 5%;
+  top: 10%;
+  border: solid 1px rgba(35, 169, 202, 0.8);
+  border-radius: 0px 10px;
+  background-color: rgb(1, 1, 54);
+  width: 160px;
+  height: 40px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.buttonback__container:hover{
+  border-radius: 0;
+  transition: 0.5s;
+}
+
+.buttonback {
+  font-weight: bold;
+  color: #eee;
+  display: flex;
+  align-items: center;
+  width: 100%;
+  height: 10px;
+  padding: 0 5px 0 5px;
+  font-family: Spiegel, "Arial Narrow", Arial, sans-serif;;
+  padding-left: 15px;
+}
+
+.buttonback__icon {
+  fill: rgb(255, 255, 255);
+  height: 14px;
+  width: 14px;
+  vertical-align: middle;
+  margin-left: 10px;
+}
+
 .cardchamp__gradient {
   padding-top: 30px;
   width: auto;
