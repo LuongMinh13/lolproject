@@ -1,0 +1,161 @@
+@font-face {
+  font-family: "beaufortforlol";
+  src: url("../../public/fonts/BeaufortforLOL-Regular.ttf");
+}
+
+.skills {
+  background-image: url("../assets/bgskillchamp.jpg");
+  height: 80vh;
+  width: 100%;
+}
+
+.skills__container {
+  width: auto;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.8);
+  background-image: linear-gradient(
+    to top,
+    rgba(34, 34, 59, 0.8) 0,
+    rgba(34, 34, 59, 0) 60%,
+    rgba(34, 34, 59, 0.8) 80%
+  );
+}
+
+.skills__wapper {
+  display: flex;
+  flex-direction: row;
+  margin-top: 60px;
+}
+
+.skills__title {
+  font-family: beaufortforlol, serif;
+  font-style: italic;
+  color: #fff;
+  font-weight: 800;
+  font-size: 5rem;
+  text-align: center;
+}
+
+.spells__container {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.spells__image__button {
+  height: 80px;
+  width: 80px;
+
+  background-color: transparent;
+}
+
+.active {
+  border: solid 1px;
+  color: rgb(208, 168, 92);
+  transition: 1.5s;
+}
+
+.notactive {
+  border: none;
+}
+
+.spells__image__button:hover {
+  border: none;
+  transition: 1s;
+}
+
+.spells__image__button > img:hover {
+  transform: scale(1.3);
+  border-radius: 0px;
+  transition: 1.5s;
+}
+
+.spells__image__button > img {
+  width: auto;
+  height: 60px;
+  width: auto;
+  border-radius: 5px;
+}
+
+.spells__container,
+.description__container {
+  flex: 1;
+}
+
+.spells__spells__container {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  flex: 1;
+  align-items: center;
+  justify-content: center;
+}
+
+.description__container {
+  position: relative;
+}
+
+.spell__description__conntainer {
+  position: absolute;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 80%;
+  margin-left: 10%;
+  margin-right: 10%;
+  height: 100%;
+}
+
+.descriptionactive {
+  opacity: 1;
+}
+
+.descriptionNotactive {
+  opacity: 0;
+}
+
+.spell__name,
+.spell__description {
+  color: #fff;
+}
+
+.spell__description {
+  text-align: center;
+}
+
+.spell__name {
+  font-size: 3rem;
+  font-family: Spiegel, "Arial Narrow", Arial, sans-serif;
+  font-style: italic;
+}
+
+.spell__description {
+  font-size: 1.5rem;
+  font-family: Spiegel, "Arial Narrow", Arial, sans-serif;
+  font-style: italic;
+}
+
+.border__outside {
+  border: 2px solid #de9b72;
+  height: 100%;
+  width: 70%;
+  padding: 6px;
+
+}
+
+.border__mid {
+  border: 6px solid #de9b72;
+  height: 100%;
+  width: 100%;
+  padding: 6px;
+  margin: auto;
+}
+
+.border__inner {
+  position: relative;
+  border: 2px solid #DE9B72;
+  height: 100%;
+  width: 100%;
+  margin: auto;
+}

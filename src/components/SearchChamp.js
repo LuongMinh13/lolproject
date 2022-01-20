@@ -41,7 +41,6 @@ function SearchChamp({ champs }) {
     setFilterChamp(champs);
   }, [champs]);
 
-
   return (
     <>
       <div className="search">
@@ -49,7 +48,6 @@ function SearchChamp({ champs }) {
         <div className="search__champs">
           <input
             onClick={() => setToogleDropdown(!toogleDropdown)}
-            // value={clickchamp}
             type="text"
             placeholder="Search..."
             onChange={handleFilter}
@@ -73,11 +71,9 @@ function SearchChamp({ champs }) {
               <li key={type.id} className="searchtype__content">
                 <button
                   value={type.type}
-                  className={
-                    isActive === type.type
-                      ? "searchtype__button active"
-                      : "searchtype__button"
-                  }
+                  className={` searchtype__button ${
+                    isActive === type.type ? " active" : null
+                  }`}
                   onClick={(e) => handleFilterType(e)}
                 >
                   {type.type}

@@ -15,7 +15,7 @@ function List() {
       try {
         const res = await axios.get(`${riotapi}/champion.json`);
         getChampData(Object.values(res.data.data));
-        // console.log("Get all champs", res.data.data);
+        console.log("Get all champs", res.data.data);
       } catch (err) {
         alert(err.message);
       }
@@ -36,41 +36,19 @@ function List() {
       })
     );
     setChamps(champArr);
-    // console.log("Array Champs", champArr);
+    console.log("Array Champs", champArr);
     setTimeout(() => {
       setshowloading(true);
     }, 2000);
   };
 
-  // console.log(resultsearch);
+  // console.log(champs);
 
   return (
     <>
       <div className="list__search">
         {showloading && <SearchChamp champs={champs} />}
-
-        {/* <SearchType /> */}
       </div>
-      {/* {!showloading && (
-        <div className="listchamps">
-          <div className="listchamps__container">
-            <div className="listchamps__content">
-              <ul className="listchamps__details">
-                {champs.map((champ) => (
-                  <li key={champ.id}>
-                    <Champ
-                      name={champ.name}
-                      image={`${imagechampapi}/${champ.id}_0.jpg`}
-                      tags={champ.tags}
-                      description={champ.blurb}
-                    />
-                  </li>
-                ))}
-              </ul>
-            </div>
-          </div>
-        </div>
-      )} */}
     </>
   );
 }

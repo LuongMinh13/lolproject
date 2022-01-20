@@ -4,12 +4,8 @@ import { useLocation } from "react-router-dom";
 import { Link } from "react-router-dom";
 import Navbar from "./Navbar";
 import { ChampionsType } from "../axios/champtype.js";
-import {
-  imagesplash,
-  imagechampapi,
-  imageskillapi,
-  imagepassiveapi,
-} from "../axios/requests.js";
+import { imagesplash } from "../axios/requests.js";
+import CardSkill from "./CardSkill";
 
 function CardChamp() {
   const location = useLocation();
@@ -19,7 +15,7 @@ function CardChamp() {
 
   return (
     <>
-    <Navbar />
+      <Navbar />
       <div
         className="cardchamp__background"
         style={{
@@ -62,6 +58,9 @@ function CardChamp() {
             </div>
           </div>
         </div>
+      </div>
+      <div className="skill__container">
+        <CardSkill spells={champ.spells} passive={champ.passive} />
       </div>
     </>
   );
